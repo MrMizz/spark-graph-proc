@@ -31,4 +31,8 @@ trait ConnectedComponentsFixtures {
     )
   }
 
+  val edges3: Seq[Edge[Double]] = {
+    Seq.empty[Edge[Double]]
+  }
+
 }

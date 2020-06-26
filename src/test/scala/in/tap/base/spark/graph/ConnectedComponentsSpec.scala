@@ -27,6 +27,17 @@ class ConnectedComponentsSpec extends BaseSpec with ConnectedComponentsFixtures 
         5L -> 5L
       )
     }
+
+    // no edges should be an identity function
+    ConnectedComponents[String, Double](vertices.toDS, edges3.toDS).collect.toSeq.sortBy(_._1) shouldBe {
+      Seq(
+        1L -> 1L,
+        2L -> 2L,
+        3L -> 3L,
+        4L -> 4L,
+        5L -> 5L
+      )
+    }
   }
 
 }
