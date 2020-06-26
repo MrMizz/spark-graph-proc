@@ -22,11 +22,11 @@ scalacOptions ++= Seq(
 val versionSpark: String = "2.4.0"
 
 libraryDependencies ++= Seq(
-  // spark-base
-  "in.tap" %% "spark-base" % "1.0.0-SNAPSHOT",
   // apache spark
   "org.apache.spark" %% "spark-core" % versionSpark % Provided,
   "org.apache.spark" %% "spark-sql" % versionSpark % Provided,
   "org.apache.spark" %% "spark-sql" % versionSpark % Provided,
-  "org.apache.spark" %% "spark-graphx" % versionSpark % Provided
+  "org.apache.spark" %% "spark-graphx" % versionSpark % Provided,
+  // test resources
+  "org.scalatest" %% "scalatest" % "3.0.4" % Test
 )
