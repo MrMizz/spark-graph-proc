@@ -21,4 +21,14 @@ trait ConnectedComponentsFixtures {
     )
   }
 
+  val edges2: Seq[Edge[String]] = {
+    Seq(
+      Edge(srcId = 1L, dstId = 2L, "12"),
+      Edge(srcId = 2L, dstId = 1L, "21"),
+      Edge(srcId = 2L, dstId = 1L, "21"),
+      Edge(srcId = 3L, dstId = 2L, "32"),
+      Edge(srcId = 5L, dstId = 5L, "55")
+    )
+  }
+
 }
