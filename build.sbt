@@ -26,5 +26,7 @@ libraryDependencies ++= Seq(
   "in.tap" %% "spark-base" % "1.0.0-SNAPSHOT",
   // apache spark
   "org.apache.spark" %% "spark-core" % versionSpark % Provided,
-  "org.apache.spark" %% "spark-sql" % versionSpark % Provided
+  "org.apache.spark" %% "spark-sql" % versionSpark % Provided,
+  "org.apache.spark" %% "spark-sql" % versionSpark % Provided,
+  "org.apache.spark" %% "spark-graphx" % versionSpark % Provided
 )
