@@ -9,9 +9,9 @@ import scala.reflect.ClassTag
 object ConnectedComponents {
 
   /**
-    * Connected Components from [[Graph]].
-    * Every Vertex Id will be preserved, and they will be unique. This is the Left [[VertexId]].
-    * The Right [[VertexId]] is the minimum [[VertexId]] belonging to the Connected Component.
+    * Connected Components from Graph.
+    * Every Vertex Id will be preserved, and they will be unique. This is the Left VertexId.
+    * The Right VertexId is the minimum VertexId belonging to the Connected Component.
     * While the Left is Unique, the Right will (hopefully & intentionally) have duplicates.
     *
     * @param graph with your vertices & edges
@@ -39,12 +39,12 @@ object ConnectedComponents {
 
   /**
     * Connected Components from Vertices & Edges.
-    * Every Vertex Id will be preserved, and they will be unique. This is the Left [[VertexId]].
-    * The Right [[VertexId]] is the minimum [[VertexId]] belonging to the Connected Component.
+    * Every Vertex Id will be preserved, and they will be unique. This is the Left VertexId.
+    * The Right VertexId is the minimum VertexId belonging to the Connected Component.
     * While the Left is Unique, the Right will (hopefully & intentionally) have duplicates.
     *
-    * @param vertices of [[Graph]]
-    * @param edges of [[Graph]]
+    * @param vertices of Graph
+    * @param edges of Graph
     * @return connected vertex ids
     */
   def apply[V: ClassTag, E: ClassTag](
@@ -58,12 +58,12 @@ object ConnectedComponents {
 
   /**
     * Connected Components from Vertices & Edges.
-    * Every Vertex Id will be preserved, and they will be unique. This is the Left [[VertexId]].
-    * The Right [[VertexId]] is the minimum [[VertexId]] belonging to the Connected Component.
+    * Every Vertex Id will be preserved, and they will be unique. This is the Left VertexId.
+    * The Right VertexId is the minimum VertexId belonging to the Connected Component.
     * While the Left is Unique, the Right will (hopefully & intentionally) have duplicates.
     *
-    * @param vertices of [[Graph]]
-    * @param edges of [[Graph]]
+    * @param vertices of Graph
+    * @param edges of Graph
     * @return connected vertex ids
     */
   def apply[V: ClassTag, E: ClassTag](
