@@ -40,4 +40,17 @@ class ConnectedComponentsSpec extends BaseSpec with ConnectedComponentsFixtures 
     }
   }
 
+  it should "preserve original vertex attribute, along with the connected component" in {
+    import spark.implicits._
+    ConnectedComponents.withVertexAttr[String, Int](vertices.toDS, edges1.toDS).collect.toSeq.sortBy(_._1) shouldBe {
+      Seq(
+        (1L, 1L, Some("A")),
+        (2L, 1L, Some("B")),
+        (3L, 1L, Some("C")),
+        (4L, 4L, Some("D")),
+        (5L, 5L, Some("E"))
+      )
+    }
+  }
+
 }
